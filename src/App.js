@@ -39,10 +39,8 @@ function App() {
         <Table striped bordered hover>
           <thead>
             <tr>
-              <th>First Name</th>
-              <th>Last Name</th>
-              <th>Email</th>
-              <th>Phone</th>
+              <th>Application Form Name</th>
+              <th>Link</th>
             </tr>
           </thead>
           <tbody>
@@ -55,8 +53,6 @@ function App() {
               .map((item, index) => (
                 <tr key={index}>
                   <td>{item.first_name}</td>
-                  <td>{item.last_name}</td>
-                  <td>{item.email}</td>
                   <td>{item.phone}</td>
                 </tr>
               ))}
