@@ -25,7 +25,7 @@ function App() {
   return (
     <div>
       <Container>
-        <h1 className='text-center mt-4'>Contact Keeper</h1>
+        <h1 className='text-center mt-4'>Application Forms Provided By Muncipality</h1>
         <Form>
           <InputGroup className='my-3'>
 
@@ -48,12 +48,12 @@ function App() {
               .filter((item) => {
                 return search.toLowerCase() === ''
                   ? item
-                  : item.first_name.toLowerCase().includes(search);
+                  : item.application.toLowerCase().includes(search);
               })
               .map((item, index) => (
                 <tr key={index}>
-                  <td>{item.first_name}</td>
-                  <td>{item.phone}</td>
+                  <td>{item.application}</td>
+                  <td> <a>{item.link}</a></td>
                 </tr>
               ))}
           </tbody>
